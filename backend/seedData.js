@@ -39,7 +39,8 @@ const products = [
     stock: 50,
     tags: ['iPhone', 'Apple', '5G'],
     rating: 4.8,
-    reviewCount: 125
+    reviewCount: 125,
+    viewCount: 1250
   },
   {
     name: 'Samsung Galaxy S24',
@@ -50,7 +51,8 @@ const products = [
     stock: 45,
     tags: ['Samsung', 'Android', '5G'],
     rating: 4.7,
-    reviewCount: 98
+    reviewCount: 98,
+    viewCount: 980
   },
   {
     name: 'MacBook Pro M3',
@@ -103,7 +105,7 @@ async function seedData() {
     // Xóa dữ liệu cũ
     await Category.deleteMany({});
     await Product.deleteMany({});
-    
+
     console.log('Đã xóa dữ liệu cũ');
 
     // Tạo categories
